@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            margin: auto;
+        }
+        h1 {
+            font-size: 32px;
+            color: #f0c808;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #f39c12;
+            font-size: 24px;
+            border-bottom: 3px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .about {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 200px; 
+            height: 150px;
+            border-radius: 10%;
+            margin-right: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            float: left;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        .skills, .experience, .education, .training, .hobbies {
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+        .box-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; 
+        }
+        .box-item {
+            background: #f0c808;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            width: calc(33.33% - 10px); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center; 
+        }
+        .go-top {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .go-top:hover {
+            color: #f39c12;
+        }
+        .home-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .home-link:hover {
+            background: #f39c12;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<a href="index.html" class="home-link"><i class="fa-solid fa-house"></i> Home</a>
+
+<div class="container">
+    <h1>My Resume</h1>
+
+    <div class="about">
+        <img src="/childhood/resume.jpg" alt="Profile Picture" class="profile-image">
+        <p>
+            Hi, my name is <span style="font-weight: bold; color: #f0c808;">John Louie R. Cuenco</span>, and I'm 19 years old from Antipolo City. 
+            I am currently pursuing a degree in Information Technology at the University of the East. I am dedicated,
+            hardworking, and eager to learn. I believe that your company will help me grow my skills and contribute effectively.
+        </p>
+    </div>
+
+    <div class="skills">
+        <h2>Technical IT Skills</h2>
+        <div class="box-list">
+            <div class="box-item">Java</div>
+            <div class="box-item">Python</div>
+            <div class="box-item">HTML & CSS</div>
+            <div class="box-item">Database Management</div>
+            <div class="box-item">C#</div>
+        </div>
+    </div>
+
+    <div class="experience">
+        <h2>Work Experience</h2>
+        <div class="box-list">
+            <div class="box-item">None</div>
+        </div>
+    </div>
+
+    <div class="education">
+        <h2>Educational Attainment</h2>
+        <div class="box-list">
+            <div class="box-item">Precious Heritage Christian School (2014-2017)</div>
+            <div class="box-item">Don Antonio de Zuzuarregui, Sr. Memorial Academy (2017-2021)</div>
+            <div class="box-item">FEU Roosvelt Cainta (2021-2023)</div>
+            <div class="box-item">University of the East (2023-2025)</div>
+        </div>
+    </div>
+
+    <div class="training">
+        <h2>Skills, Training, Seminar Attended</h2>
+        <div class="box-list">
+            <div class="box-item">Good at teamwork projects</div>
+            <div class="box-item">Capable of managing multiple assignments</div>
+        </div>
+    </div>
+
+    <div class="hobbies">
+        <h2>Hobbies/Interests</h2>
+        <div class="box-list">
+            <div class="box-item">Web Design</div>
+            <div class="box-item">Game Development</div>
+            <div class="box-item">Software Development</div>
+            <div class="box-item">Sports</div>
+        </div>
+    </div>
+
+    <a href="#top" class="go-top">Go Top</a>
+</div>
+
+</body>
+</html>

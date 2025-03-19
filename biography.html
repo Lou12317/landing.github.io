@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lou's Life Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            font-size: 24px;
+            color: #f0c808;
+            margin-left: 20px;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover {
+            background: #f39c12;
+            color: black;
+        }
+        .home-link {
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            margin-right: 20px;
+        }
+        .home-link:hover {
+            background: #f39c12;
+            color: black;
+        }
+        h2 {
+            color: #f0c808;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #ddd;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+            width: 90%;
+            max-width: 900px;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: calc(25% - 10px);
+            margin-bottom: 15px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item img {
+            width: 100%; 
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .description {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover .description {
+            opacity: 1;
+        }
+        .go-top {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .go-top:hover {
+            color: #f39c12;
+        }
+        footer {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Lou's Life Story</h1>
+    <div class="nav-links">
+        <a href="#childhood"><i class="fa-solid fa-user"></i> Childhood</a>
+        <a href="#teenage"><i class="fa-solid fa-user"></i> Teenage</a>
+        <a href="#college"><i class="fa-solid fa-user"></i> College</a>
+    </div>
+    <a href="index.html" class="home-link"><i class="fa-solid fa-house"></i> Home</a>
+</nav>
+
+<section id="childhood">
+    <h2>Childhood Years</h2>
+    <p> Hi, my name is John Louie R. Canco<sup>1</sup>. I'm from Antipolo City, and I'm 19 years old<sup>2</sup>.
+        My birthday is May 17<sup>3</sup><sup><sup>th</sup></sup>, Taurus, and my year is 2005, the year of the rooster<sup>4</sup>.
+        I have 2 siblings; I'm the middle one, both brothers<sup>5</sup>. The older one is now graduated,
+        and his course is marine; on the other hand, the youngest is just entering college, and my mom is a teacher
+        in a public school located in Antipolo, and my father is a chef on a ship<sup>6</sup>. My hobbies are
+        riding motorcycles, watching movies or series, playing basketball, playing online games, and sleeping<sup>7</sup>.
+        The first thing that I'm going to talk about is my childhood<sup>8</sup>. During my kinder time, I think
+        my school is a private school<sup>9</sup>. I'm not sure because it's a long time ago<sup>10</sup>.
+        My lolo is the one that bathed and sundo me because at that time my mother and father were working,
+        so most of the time my lolo is the one that always spent time with me<sup>11</sup>. My grandmother,
+        at that time, passed away; that's why my lolo is the one I have most of my memory of<sup>12</sup>.
+        Back to the topic, during the elementary days, I switched schools<sup>13</sup>.
+        That school is Spring of Joy Christian School<sup>14</sup>. That is close to my house,
+        and both of my brothers are also attending there<sup>15</sup>.
+        I have a fun time in that school because I have made so many friends, and during that time I'm active in
+        activities<sup>16</sup>. Like when I was in grade 3, we joined a competition in dancing culture, and we battled so
+        many schools<sup>17</sup>. Unfortunately, we lost<sup>18</sup>. During grade 4, I joined a SCI chant competition
+        in our school, and I got 2<sup>19</sup><sup><sup>nd</sup></sup> place, and during that time my classmate and I
+        also joined a retreat in Zambales<sup>20</sup>. We stayed a week there<sup>21</sup>.
+        I think we preached and did all kinds of fun activities<sup>22</sup>.
+        Activities like those helped me develop a sense of teamwork and a deeper understanding of my peers<sup>23</sup>.
+        Looking back, those experiences not only shaped my skills but also created lasting memories that
+        I cherish to this day<sup>24</sup>.</p>
+    <div class="gallery">
+        <a href="childhood/bata1.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/bata1.jpg" alt="Childhood Photo 1" title="">
+        </a>
+        <a href="childhood/bata2.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/bata2.jpg" alt="Childhood Photo 2" title="">
+        </a>
+        <a href="childhood/bata3.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/bata3.jpg" alt="Childhood Photo 3" title="">
+        </a>
+        <a href="childhood/bata4.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/bata4.jpg" alt="Childhood Photo 4" title="">
+        </a>
+    </div>
+    <a href="#top" class="go-top">Go Top</a>
+</section>
+
+<section id="teenage">
+    <h2>Teenage Years</h2>
+    <p>When I was in grade 5, I transferred to another school that is also close to my house<sup>1</sup>. The school's name is
+        Precious Heritage Christian School<sup>2</sup>. Compared to my last school, most of my friends and classmates in this school
+        are still close to me, and I have also made so many friends there<sup>3</sup>. During that time, I was active in basketball,
+        and my friends and I personally joined some competitions at different places, and we also represented the
+        barangay at that time in basketball, and I also joined some programs about basketball so I can improve more<sup>4</sup>.
+        Unfortunately, when I was in grade 7, I transferred again to another school, so I did not continue to pursue
+        basketball<sup>5</sup>. The name of the new school is San Antonio de Padua Arvegui, Sr. Memorial (DAYSM)<sup>6</sup>.
+        I also met so many people there<sup>7</sup>. I stayed in that school for 4 years, so basically, I stayed there in my
+        whole high school<sup>8</sup>. During that time, I had no interest in joining activities in school, as I was focused on my
+        studies<sup>9</sup>. Most of the things that I did there were just attend classes, but I also joined some activities,
+        like intramurals<sup>10</sup>. I like that event there because it allows us to know to play and test the foundation day event
+        of the school is also fun<sup>11</sup>. There are so many events, like song competitions and band showings, and there are
+        so many booths for activities and foods<sup>12</sup>.</p>
+    <div class="gallery">
+        <a href="childhood/teenage1.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/teenage1.jpg" alt="Teenage Photo 1" title="">
+        </a>
+        <a href="childhood/teenage2.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/teenage2.jpg" alt="Teenage Photo 2" title="">
+        </a>
+        <a href="childhood/teenage3.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/teenage3.jpg" alt="Teenage Photo 3" title="">
+        </a>
+        <a href="childhood/teenage4.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/teenage4.jpg" alt="Teenage Photo 4" title="">
+        </a>
+    </div>
+    <a href="#top" class="go-top">Go Top</a>
+</section>
+
+<section id="college">
+    <h2>College Years</h2>
+    <p> During the pandemic, I basically watched some movies and series and slept a lot while we used online classes<sup>1</sup>.
+        That was also the time of my moving up<sup>2</sup>. After my moving up, I transferred to another school,
+        FEU Cainta<sup>3</sup>. It is a branch of FEU<sup>4</sup>. I attended that for 2 years in my senior year,
+        but all my classes were online<sup>5</sup>. However, we attended the prom night of the school, and I graduated
+        there<sup>6</sup>. I was going to apply to the school of FEU<sup>7</sup>. I got invited by a friend, so I only
+        applied to FEU<sup>8</sup>. The experience I got in the school so far is good<sup>9</sup>. I have come to meet
+        some of the professors are good and fun to teach<sup>10</sup>. The co-curricular studies of the school are good,
+        and I also created a lot in the first year, and I'm expecting to learn more in this upcoming subject in the
+        2<sup>11</sup><sup><sup>nd</sup></sup> semester of the 2<sup>12</sup><sup><sup>nd</sup></sup> year<sup>13</sup>.
+        This is my biography<sup>14</sup>.
+        Thank you for taking the time to read my journey so far<sup>15</sup>. With each passing year,
+        I hope to gain not only knowledge but also meaningful experiences that will help my future<sup>16</sup>. </p>
+    <div class="gallery">
+        <a href="childhood/college1.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/college1.jpg" alt="College Photo 1" title="">
+        </a>
+        <a href="childhood/college2.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/college2.jpg" alt="College Photo 2" title="">
+        </a>
+        <a href="childhood/college3.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/college3.jpg" alt="College Photo 3" title="">
+        </a>
+        <a href="childhood/college4.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/college4.jpg" alt="College Photo 4" title="">
+        </a>
+    </div>
+    <a href="#top" class="go-top">Go Top</a>
+</section>
+
+<footer>
+    <p>Thank you for reading.</p>
+</footer>
+
+</body>
+</html>

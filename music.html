@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .main-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start; 
+            margin-bottom: 10px;
+        }
+
+        .genre-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end; 
+            margin-bottom: 10px;
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            display: inline-block;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #f39c12;
+            color: black;
+        }
+
+        nav li.active a {
+            background-color: #f39c12;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #f0c808;
+        }
+
+        .category {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+            width: 90%;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .category:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #f0c808;
+            font-size: 24px;
+            border-bottom: 3px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #ddd;
+        }
+
+        .go-top {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        .go-top:hover {
+            color: black;
+            background: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <ul class="nav-links main-links">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="active"><a href="music.html"><i class="fa-solid fa-music"></i> Music</a></li>
+        <li><a href="film.html"><i class="fa-solid fa-film"></i> Film</a></li>
+    </ul>
+    <ul class="nav-links genre-links">
+        <li><a class="genre-link" href="#rnb">R&B</a></li>
+        <li><a class="genre-link" href="#hiphop">Hip-Hop</a></li>
+        <li><a class="genre-link" href="#opm">OPM</a></li>
+    </ul>
+</nav>
+
+<h1>My Beat</h1>
+
+<div class="category" id="rnb">
+    <h2>R&B</h2>
+    <p>Enjoy the smooth and soulful sounds of R&B.</p>
+    <audio controls>
+        <source src="../music/sample1.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> PARTYNEXTDOOR | <strong>Song:</strong> Peace of Mind</p>
+
+    <audio controls>
+        <source src="../music/sample2.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> PARTYNEXTDOOR ft. Drake | <strong>Song:</strong> Come And See Me</p>
+
+    <audio controls>
+        <source src="../music/sample3.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> PARTYNEXTDOOR | <strong>Song:</strong> Deeper</p>
+
+    <a href="#top" class="go-top">Go Top</a>
+</div>
+
+<div class="category" id="hiphop">
+    <h2>Hip-Hop</h2>
+    <p>Feel the rhythm and energy of Hip-Hop music.</p>
+    <audio controls>
+        <source src="../music/sample4.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> Drake ft. Giveon | <strong>Song:</strong> Chicago Freestyle</p>
+
+    <audio controls>
+        <source src="../music/sample5.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> Kendrick Lamar | <strong>Song:</strong> Heart pt. 6</p>
+
+    <audio controls>
+        <source src="../music/sample6.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> Kendrick Lamar | <strong>Song:</strong> Not Like Us</p>
+
+    <a href="#top" class="go-top">Go Top</a>
+</div>
+
+<div class="category" id="opm">
+    <h2>OPM (Original Pilipino Music)</h2>
+    <p>Discover the rich sounds of Original Pilipino Music.</p>
+    <audio controls>
+        <source src="../music/sample7.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> Eraserheads | <strong>Song:</strong> Magasin</p>
+
+    <audio controls>
+        <source src="../music/sample8.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> Magnus Haven | <strong>Song:</strong> Imahe</p>
+
+    <audio controls>
+        <source src="../music/sample9.mp3" type="audio/mpeg">
+    </audio>
+    <p><strong>Artist:</strong> TJ Monterde | <strong>Song:</strong> Dating Tayo</p>
+
+    <a href="#top" class="go-top">Go Top</a>
+</div>
+
+</body>
+</html>

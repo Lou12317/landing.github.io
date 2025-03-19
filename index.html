@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Personal Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        nav li {
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #f39c12;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav li.active a {
+            background-color: #f39c12;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: #f0c808;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #ddd;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        .video-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        .video-container:hover {
+            transform: scale(1.02);
+        }
+
+        video {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
+        .about-me {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+
+        .about-me img {
+            max-width: 200px;
+            border-radius: 15px;
+            margin-right: 30px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #f0c808;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #f39c12;
+            transform: scale(1.2);
+        }
+
+        .btn {
+            background: #f39c12;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #f0c808;
+        }
+
+        @media (max-width: 768px) {
+            .about-me {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-me img {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="biography.html"><i class="fa-solid fa-user"></i> Biography</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-medal"></i> Skills</a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i> Resume</a></li>
+            <li><a href="photogallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+            <li><a href="music.html"><i class="fa-solid fa-play"></i> Media</a></li>
+            <li><a href="contacts.html"><i class="fa-solid fa-address-book"></i> Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="video-container">
+        <h2>Welcome Video</h2>
+        <video controls>
+            <source src="welcome.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="about-me">
+        <img src="itad.jpg" alt="Your Profile Picture">
+        <div>
+            <h1>About Me</h1>
+            <p>Hello! My name is John Louie Cuenco, I’m 19 years old, and I’m from Antipolo City, born in 2005. 
+                I’m a Taurus, and I’m currently in college at the University of the East, pursuing a degree in Information Technology. 
+                I’ve always been fascinated by technology and the ever-evolving digital world. In my free time, I enjoy watching movies and series, 
+                riding motorcycles, playing video games, playing basketball, and getting some good sleep. 
+                I believe in always striving to learn and grow, and I’m excited to see where my journey in education and life will take me.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100005166846174&mibextid=wwXIfr&rdid=rn4dhBFvEOccY2l2&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BRLqGw2hn%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lhjoun/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://telegram.me/your_telegram_profile" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

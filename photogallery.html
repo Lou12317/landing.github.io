@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover {
+            background: #f39c12;
+            color: black;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #f0c808;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .gallery-item:hover .description {
+            opacity: 1;
+        }
+        @media (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-links">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </div>
+</nav>
+
+<h1>Photo Dump</h1>
+<div id="gallery" class="gallery">
+    <div class="gallery-item">
+        <a href="../dump/dump1.jpg" target="_blank">
+            <img src="../dump/dump1.jpg" alt="Calagtan Batangas">
+        </a>
+        <div class="description">Calagtan Batangas</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump2.jpg" target="_blank">
+            <img src="../dump/dump2.jpg" alt="Tagaytay">
+        </a>
+        <div class="description">Tagaytay</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump3.jpg" target="_blank">
+            <img src="../dump/dump3.jpg" alt="Angono Rizal">
+        </a>
+        <div class="description">Angono Rizal</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump4.jpg" target="_blank">
+            <img src="../dump/dump4.jpg" alt="Baguio">
+        </a>
+        <div class="description">Baguio</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump5.jpg" target="_blank">
+            <img src="../dump/dump5.jpg" alt="Daraitan Tanay Rizal">
+        </a>
+        <div class="description">Cebu</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump6.jpg" target="_blank">
+            <img src="../dump/dump6.jpg" alt="BGC">
+        </a>
+        <div class="description">BGC</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump7.jpg" target="_blank">
+            <img src="../dump/dump7.jpg" alt="Billiards">
+        </a>
+        <div class="description">Billiards</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump8.jpg" target="_blank">
+            <img src="../dump/dump8.jpg" alt="Gym">
+        </a>
+        <div class="description">Gym</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump9.jpg" target="_blank">
+            <img src="../dump/dump9.jpg" alt="BigBike">
+        </a>
+        <div class="description">BigBike</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump10.jpg" target="_blank">
+            <img src="../dump/dump10.jpg" alt="Akai Bar">
+        </a>
+        <div class="description">Akai Bar</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump11.jpg" target="_blank">
+            <img src="../dump/dump11.jpg" alt="Cebu">
+        </a>
+        <div class="description">Sleep Well</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump12.jpg" target="_blank">
+            <img src="../dump/dump12.jpg" alt="CCLEX Bridge">
+        </a>
+        <div class="description">CCLEX Bridge</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump13.jpg" target="_blank">
+            <img src="../dump/dump13.jpg" alt="Simala Shrine Church">
+        </a>
+        <div class="description">Simala Shrine Church</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump14.jpg" target="_blank">
+            <img src="../dump/dump14.jpg" alt="Kawasan Falls">
+        </a>
+        <div class="description">Tropa Time</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump15.jpg" target="_blank">
+            <img src="../dump/dump15.jpg" alt="University of the East">
+        </a>
+        <div class="description">University of the East</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump16.jpg" target="_blank">
+            <img src="../dump/dump16.jpg" alt="Nmax">
+        </a>
+        <div class="description">Nmax</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump17.jpg" target="_blank">
+            <img src="../dump/dump17.jpg" alt="Pinto Art">
+        </a>
+        <div class="description">Pinto Art</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump18.jpg" target="_blank">
+            <img src="../dump/dump18.jpg" alt="Intramuros">
+        </a>
+        <div class="description">Kawasan Falls</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump19.jpg" target="_blank">
+            <img src="../dump/dump19.jpg" alt="Star City">
+        </a>
+        <div class="description">Star City</div>
+    </div>
+    <div class="gallery-item">
+        <a href="../dump/dump20.jpg" target="_blank">
+            <img src="../dump/dump20.jpg" alt="My Dog">
+        </a>
+        <div class="description">My Dog</div>
+    </div>
+</div>
+
+
+</body>
+</html>

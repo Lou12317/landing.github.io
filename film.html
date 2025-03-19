@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kind of Film</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .main-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        .genre-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            display: inline-block;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #f39c12;
+            color: black;
+        }
+
+        nav li.active a {
+            background-color: #f39c12;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+            margin: 20px auto 40px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #f0c808;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #ddd;
+            margin-top: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            padding: 20px;
+        }
+
+        .category {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .category:hover {
+            transform: scale(1.03);
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .video-group {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+            margin-bottom: 15px;
+        }
+
+        .go-top {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .go-top:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-links main-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="music.html"><i class="fa-solid fa-music"></i> Music</a></li>
+            <li class="active"><a href="film.html"><i class="fa-solid fa-film"></i> Film</a></li>
+        </ul>
+        <ul class="nav-links genre-links">
+            <li><a class="genre-link" href="#tvshows">TV Show</a></li>
+            <li><a class="genre-link" href="#movies">Movies</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>My Kind of Film</h1>
+    </header>
+
+    <div class="container">
+        <div class="category" id="tvshows">
+            <h2>TV Show</h2>
+            <div class="flex-container">
+                <div class="video-group">
+                    <h3>Supernatural</h3>
+                    <video controls>
+                        <source src="../film/film1.mp4" type="video/mp4">
+                    </video>
+                    <p>In the Beginning...</p>
+                    <video controls>
+                        <source src="../film/film2.mp4" type="video/mp4">
+                    </video>
+                    <p>Jack and Dean Meet the First Man</p>
+                </div>
+
+                <div class="video-group">
+                    <h3>Friends</h3>
+                    <video controls>
+                        <source src="../film/film3.mp4" type="video/mp4">
+                    </video>
+                    <p>Never Speak of the Jellyfish Incident.</p>
+                    <video controls>
+                        <source src="../film/film4.mp4" type="video/mp4">
+                    </video>
+                    <p>Monica Loves Her Seating Chart</p>
+                </div>
+            </div>
+            <a href="#top" class="go-top">Go Top</a>
+        </div>
+
+        <div class="category" id="movies">
+            <h2>Movie</h2>
+            <div class="flex-container">
+                <div class="video-group">
+                    <h3>John Wick</h3>
+                    <video controls>
+                        <source src="../film/film5.mp4" type="video/mp4">
+                    </video>
+                    <p>John Wick warms up against 2 guys</p>
+                    <video controls>
+                        <source src="../film/film6.mp4" type="video/mp4">
+                    </video>
+                    <p>John Wick does tactical shopping</p>
+                </div>
+
+                <div class="video-group">
+                    <h3>Pacific Rim</h3>
+                    <video controls>
+                        <source src="../film/film7.mp4" type="video/mp4">
+                    </video>
+                    <p>The Sacrifice of Striker Eureka Scene</p>
+                    <video controls>
+                        <source src="../film/film8.mp4" type="video/mp4">
+                    </video>
+                    <p>Cherno Alpha & Crimson Typhoon Scene</p>
+                </div>
+            </div>
+            <a href="#top" class="go-top">Go Top</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

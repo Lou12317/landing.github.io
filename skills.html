@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lou's Life Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            font-size: 24px;
+            color: #f0c808;
+            margin-left: 20px;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover {
+            background: #f39c12;
+            color: black;
+        }
+        .home-link {
+            text-decoration: none;
+            color: #f0c808;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            margin-right: 20px;
+        }
+        .home-link:hover {
+            background: #f39c12;
+            color: black;
+        }
+        h2 {
+            color: #f0c808;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #ddd;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+            width: 90%;
+            max-width: 900px;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: calc(25% - 10px);
+            margin-bottom: 15px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .description {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover .description {
+            opacity: 1;
+        }
+        .go-top {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .go-top:hover {
+            color: #f39c12;
+        }
+        footer {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Lou's Life Story</h1>
+    <div class="nav-links">
+        <a href="#skills"><i class="fa-solid fa-brain"></i> Skills</a>
+        <a href="#hobbies"><i class="fa-solid fa-dumbbell"></i> Hobbies</a>
+        <a href="#interest"><i class="fa-solid fa-motorcycle"></i> Interests</a>
+    </div>
+    <a href="index.html" class="home-link"><i class="fa-solid fa-house"></i> Home</a>
+</nav>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <p> My life has always been strongly influenced by athleticism.<sup>1</sup> Growing up on the streets, 
+        I was surrounded by my surroundings.<sup>2</sup> Playing traditional games like luksong baka, tumbang preso, 
+        and habul-habulan while growing up in Antipolo City helped me develop my agility, strategy, and teamwork.<sup>3</sup> 
+        These games, which have a strong cultural foundation in the Philippines, developed a love of sports 
+        and healthy competition.<sup>4</sup> In addition to this, basketball became a passion of mine, improving my hand-eye 
+        coordination and enhancing my physical skills.<sup>5</sup> I developed a passion for puzzles like dama, sci-dama, chess, 
+        and Rubik's Cube at the same time.<sup>6</sup> In grade 4, my focus was Sci-dama, a complicated checkers variant,
+        leading to a 2nd place finish in our school's championship.<sup>7</sup> This accomplishment strengthened 
+        my respect for good planning and strategic thinking.<sup>8</sup> I am a more well-rounded person as a result of 
+        these experiences, both mental and physical.<sup>9</sup> While playing mind games sharpened my analytical and
+        problem-solving skills, my athletic experience provided discipline and a spirit of competition.<sup>10</sup> 
+        I can tackle problems creatively and resolutely because of my combination of mental and physical agility.<sup>11</sup> 
+        I have a strong connection for sports and physical challenges, and I feel at ease doing any 
+        kind of exercises.<sup>12</sup> My early experiences left an enormous appreciation for the importance of 
+        physical activity and its favorable impact on both bodily and mental well-being.<sup>13</sup> I am always excited to try new academic and athletic pursuits because of this desire.<sup>14</sup> 
+        I think that playing basketball, mind games, and traditional Filipino games has helped me develop as an athlete and strategist while also teaching me important life lessons like perseverance, teamwork, 
+        and the need to keep an active and positive attitude.<sup>15</sup> I am anxious to use 
+        my athleticism and skills in upcoming challenges since I am confident in my ability.<sup>16</sup>
+    </p>
+    <div class="gallery">
+        <a href="childhood/skill1.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/skill1.jpg" alt="College Photo 1">
+        </a>
+        <a href="childhood/skill2.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/skill2.jpg" alt="College Photo 2">
+        </a>
+        <a href="childhood/skill3.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/skill3.jpg" alt="College Photo 3">
+        </a>
+        <a href="childhood/skill4.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/skill4.jpg" alt="College Photo 4">
+        </a>
+    </div>
+    <a href="#top" class="go-top">Go Top</a>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <p>My hobbies have changed a lot over time, but right now, I mostly spend my time sleeping and working on school activities.<sup>1</sup> 
+        Before, I used to have so many hobbies, like playing basketball, which was a huge part of my life.<sup>2</sup> 
+        My friends and I would go to different courts just to challenge other players, and sometimes,
+        we even made bets either for money or just for a bottle of water but no matter the stakes, the games were always intense.<sup>3</sup> 
+        Another hobby I really enjoyed was playing billiards, especially during the pandemic.<sup>4</sup> 
+        My friends and I would play until late at night, sometimes so late that we just ended up sleeping by the pool.<sup>5</sup> 
+        I also love riding motorcycles with my friends, and we often take trips to nature spots in places like Angono,
+        Taytay, Binangonan, and Paenaan.<sup>6</sup> One of my longest rides was from Antipolo to Bulacan and then to Infanta,
+        Quezon, where there’s a beautiful beach that made the long trip totally worth it.<sup>7</sup> Sometimes, 
+        we just ride along Marilaque to experience the famous Devil’s Corner, which is both thrilling and a little scary.<sup>8</sup> 
+        I also used to go to the gym regularly, but lately, I’ve been too busy with school, so I only go when 
+        I have the time.<sup>9</sup> Even though I miss my old hobbies, I understand that priorities change, and right now,
+        my focus is on my studies.<sup>10</sup> Still, I hope to get back into playing basketball and riding more often
+        when I have the chance.<sup>11</sup> Looking back, I realize how much fun I had doing all these activities, 
+        especially with my friends.<sup>12</sup> Whether it was the competitive rush of basketball, the strategic plays in 
+        billiards, or the freedom of riding on open roads, each hobby gave me a different kind of excitement.<sup>13</sup> 
+        I also miss the bonding moments, like the late night talks after a long ride or the laughter after a 
+        heated billiards match.<sup>14</sup> These hobbies weren’t just pastimes—they were moments that made my days more
+        exciting and memorable.<sup>15</sup> Even though I don’t get to do them as often now, I know they’ll always be a part
+        of who I am.<sup>16</sup> Maybe once my schedule frees up, I can go back to doing the things I love.<sup>17</sup> 
+        Until then, I’ll just keep pushing through with my studies and make time for my hobbies whenever I can.<sup>18</sup> 
+        Life keeps moving, and so do my interests, but I know that the things I once loved will always find 
+        their way back to me.<sup>19</sup></p>
+    <div class="gallery">
+        <a href="childhood/hobby1.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/hobby1.jpg" alt="College Photo 1">
+        </a>
+        <a href="childhood/hobby2.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/hobby2.jpg" alt="College Photo 2">
+        </a>
+        <a href="childhood/hobby3.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/hobby3.jpg" alt="College Photo 3">
+        </a>
+        <a href="childhood/hobby4.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/hobby4.jpg" alt="College Photo 4">
+        </a>
+    </div>
+    <a href="#top" class="go-top">Go Top</a>
+</section>
+
+<section id="interest">
+    <h2>Interests</h2>
+    <p>My hobbies have changed a lot over time, but right now, I mostly spend my time sleeping and working on school activities.<sup>1</sup> 
+        Before, I used to have so many hobbies, like playing basketball, which was a huge part of my life.<sup>2</sup> 
+        My friends and I would go to different courts just to challenge other players, and sometimes,
+        we even made bets either for money or just for a bottle of water but no matter the stakes, the games were always intense.<sup>3</sup> 
+        Another hobby I really enjoyed was playing billiards, especially during the pandemic.<sup>4</sup> 
+        My friends and I would play until late at night, sometimes so late that we just ended up sleeping by the pool.<sup>5</sup> 
+        I also love riding motorcycles with my friends, and we often take trips to nature spots in places like Angono,
+        Taytay, Binangonan, and Paenaan.<sup>6</sup> One of my longest rides was from Antipolo to Bulacan and then to Infanta,
+        Quezon, where there’s a beautiful beach that made the long trip totally worth it.<sup>7</sup> Sometimes, 
+        we just ride along Marilaque to experience the famous Devil’s Corner, which is both thrilling and a little scary.<sup>8</sup> 
+        I also used to go to the gym regularly, but lately, I’ve been too busy with school, so I only go when 
+        I have the time.<sup>9</sup> Even though I miss my old hobbies, I understand that priorities change, and right now,
+        my focus is on my studies.<sup>10</sup> Still, I hope to get back into playing basketball and riding more often
+        when I have the chance.<sup>11</sup> Looking back, I realize how much fun I had doing all these activities, 
+        especially with my friends.<sup>12</sup> Whether it was the competitive rush of basketball, the strategic plays in 
+        billiards, or the freedom of riding on open roads, each hobby gave me a different kind of excitement.<sup>13</sup> 
+        I also miss the bonding moments, like the late night talks after a long ride or the laughter after a 
+        heated billiards match.<sup>14</sup> These hobbies weren’t just pastimes—they were moments that made my days more
+        exciting and memorable.<sup>15</sup> Even though I don’t get to do them as often now, I know they’ll always be a part
+        of who I am.<sup>16</sup> Maybe once my schedule frees up, I can go back to doing the things I love.<sup>17</sup> 
+        Until then, I’ll just keep pushing through with my studies and make time for my hobbies whenever I can.<sup>18</sup> 
+        Life keeps moving, and so do my interests, but I know that the things I once loved will always find 
+        their way back to me.<sup>19</sup>
+    </p>
+    <div class="gallery">
+        <a href="childhood/interest1.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/interest1.jpg" alt="College Photo 1">
+        </a>
+        <a href="childhood/interest2.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/interest2.jpg" alt="College Photo 2">
+        </a>
+        <a href="childhood/interest3.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/interest3.jpg" alt="College Photo 3">
+        </a>
+        <a href="childhood/interest4.jpg" target="_blank" class="gallery-item">
+            <img src="childhood/interest4.jpg" alt="College Photo 4">
+        </a>
+    </div>
+    <a href="#top" class="go-top">Go Top</a>
+</section>
+
+<footer>
+    <p>Thank you for reading.</p>
+</footer>
+
+</body>
+</html>
